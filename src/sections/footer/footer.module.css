@@ -1,0 +1,21 @@
+.footer {
+  padding: 2rem 1.25rem;
+  border-top: 1px solid var(--line);
+  background: var(--surface-warm);
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.inner p {
+  margin: 0;
+}
+
+@media (max-width: 620px) {
+  .inner {
+    flex-direction: column;
+  }
+}

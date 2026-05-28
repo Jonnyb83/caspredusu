@@ -1,0 +1,159 @@
+.hero {
+  min-height: 88vh;
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  align-items: center;
+  gap: 4rem;
+  padding: 7rem 6vw 5rem;
+  background: linear-gradient(135deg, #f7f1e8 0%, #eef3ea 100%);
+}
+
+.content {
+  max-width: 680px;
+}
+
+.label {
+  margin-bottom: 1.2rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #8a7658;
+}
+
+.content h1 {
+  margin: 0;
+  font-size: clamp(2.1rem, 4vw, 3.45rem);
+  line-height: 1.08;
+  font-weight: 500;
+  color: #2f352c;
+}
+
+.text {
+  margin-top: 1.6rem;
+  max-width: 620px;
+  font-size: 1.08rem;
+  line-height: 1.8;
+  color: #5f6659;
+}
+
+.actions {
+  margin-top: 2.3rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.primaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.95rem 1.65rem;
+  border-radius: 999px;
+  background: #6f7f5f;
+  color: #fff;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.primaryButton:hover {
+  transform: translateY(-2px);
+  background: #59694d;
+}
+
+.dots {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.dot {
+  width: 0.65rem;
+  height: 0.65rem;
+  border: none;
+  border-radius: 999px;
+  background: #c8c0b2;
+  cursor: pointer;
+  transition: width 0.25s ease, background 0.25s ease;
+}
+
+.activeDot {
+  width: 2rem;
+  background: #6f7f5f;
+}
+
+.slider {
+  position: relative;
+  min-height: 540px;
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: 0 24px 70px rgba(47, 53, 44, 0.16);
+  background: #ddd;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.activeSlide {
+  opacity: 1;
+  z-index: 1;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slideOverlay {
+  position: absolute;
+  left: 1.4rem;
+  right: 1.4rem;
+  bottom: 1.4rem;
+  padding: 1.1rem 1.3rem;
+  border-radius: 1.2rem;
+  background: rgba(255, 252, 247, 0.82);
+  backdrop-filter: blur(10px);
+}
+
+.slideOverlay p {
+  margin: 0;
+  font-size: 1rem;
+  color: #33392f;
+}
+
+@media (max-width: 980px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 6rem;
+  }
+
+  .slider {
+    min-height: 430px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 5.5rem 1.2rem 3rem;
+    gap: 2.5rem;
+  }
+
+  .content h1 {
+    font-size: 2rem;
+  }
+
+  .actions {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .slider {
+    min-height: 360px;
+    border-radius: 1.4rem;
+  }
+}

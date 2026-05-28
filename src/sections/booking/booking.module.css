@@ -1,0 +1,109 @@
+.booking {
+  padding: 7rem 6vw;
+  background: linear-gradient(180deg, #f7f3ed 0%, #eef3ea 100%);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 0.85fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.content {
+  max-width: 640px;
+}
+
+.label {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #8a7658;
+}
+
+.content h2 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.1;
+  font-weight: 500;
+  color: #2f352c;
+}
+
+.text {
+  margin-top: 1.5rem;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #5f6659;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 1rem 1.7rem;
+  border-radius: 999px;
+  background: #6f7f5f;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  background: #59694d;
+}
+
+.card {
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 24px 70px rgba(47, 53, 44, 0.12);
+}
+
+.cardContent {
+  padding: 2.4rem;
+}
+
+.cardLabel {
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #8a7658;
+}
+
+.cardContent h3 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #2f352c;
+}
+
+.cardContent ul {
+  margin-top: 1.6rem;
+  padding-left: 1.2rem;
+  color: #5f6659;
+  line-height: 2;
+}
+
+@media (max-width: 980px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .booking {
+    padding: 5rem 1.2rem;
+  }
+
+  .cardContent {
+    padding: 1.8rem;
+  }
+
+  .content h2 {
+    font-size: 2rem;
+  }
+}
