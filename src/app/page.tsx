@@ -16,11 +16,11 @@ export default function HomePage() {
       <Navbar />
       <main>
         <Hero />
+        <About />
         <Services />
         <EmotionCode />
         <SessionInfo />
         <Booking />
-        <About />
         <Pricing />
         <Contact />
         <Disclaimer />

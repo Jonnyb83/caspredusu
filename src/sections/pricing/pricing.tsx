@@ -4,7 +4,7 @@ const prices = [
   ['Antimigrenózna a antistresová masáž hlavy', '20 min', '15 €'],
   ['Reflexná a regeneračná masáž rúk', '20 min', '15 €'],
   ['Workshop – Spoznajte Emočný kód', '60 min', '25 €'],
-  ['Emočný kód – sedenie na diaľku', 'individuálne', 'od 15 €'],
+  ['Emočný kód – sedenie na diaľku', 'individuálne', '(za uvoľnenú 1 emóciu) 1,50 € '],
 ]
 
 export function Pricing() {

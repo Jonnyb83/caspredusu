@@ -24,7 +24,7 @@ export function Navbar() {
           ))}
         </div>
 
-        <a href="#kontakt" className={styles.cta}>
+        <a href="#rezervacia" className={styles.cta}>
           Rezervovať
         </a>
       </nav>

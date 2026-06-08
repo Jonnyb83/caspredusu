@@ -4,54 +4,47 @@ export function Contact() {
   return (
     <section id="kontakt" className="section">
       <div className={`container ${styles.wrap}`}>
-        <div>
-          <p className="eyebrow">Kontakt a rezervácia</p>
-          <h2>Máte otázky alebo sa chcete objednať?</h2>
+        <div className={styles.card}>
+          <p className="eyebrow">Kontaktné údaje</p>
+
+          <h2>Kontakt</h2>
+
           <p>
-            Vyplňte kontaktný formulár a ozvem sa vám čo najskôr. Do správy
-            môžete napísať, o akú službu máte záujem, preferovaný termín alebo
-            stručný popis otázky.
+            V prípade otázok ma môžete kontaktovať e-mailom.
+            Rezerváciu termínu si jednoducho vytvoríte cez online rezervačný
+            systém.
           </p>
+
+          <div className={styles.info}>
+            <div>
+              <strong>E-mail</strong>
+              <p>
+                <a href="mailto:maria.rapusakova@gmail.com">
+                  maria.rapusakova@gmail.com
+                </a>
+              </p>
+            </div>
+
+            <div>
+              <strong>Spoločnosť</strong>
+              <p>Rekofin MR s.r.o.</p>
+            </div>
+
+            <div>
+              <strong>Obchodný register</strong>
+              <p>
+                Mestský súd Bratislava III
+                <br />
+                Vložka č. 113432/B
+              </p>
+            </div>
+
+            <div>
+              <strong>IBAN</strong>
+              <p>SK05 8330 0000 0023 0128 6494</p>
+            </div>
+          </div>
         </div>
-
-        <form className={styles.form} action="/api/contact" method="POST">
-          <label>
-            Meno
-            <input type="text" name="name" required />
-          </label>
-
-          <label>
-            E-mail
-            <input type="email" name="email" required />
-          </label>
-
-          <label>
-            Telefón
-            <input type="tel" name="phone" />
-          </label>
-
-          <label>
-            Služba
-            <select name="service" defaultValue="">
-              <option value="" disabled>
-                Vyberte službu
-              </option>
-              <option>Emočný kód</option>
-              <option>Masáž hlavy</option>
-              <option>Masáž rúk</option>
-              <option>Workshop</option>
-            </select>
-          </label>
-
-          <label>
-            Správa
-            <textarea name="message" rows={5} required />
-          </label>
-
-          <button type="submit" className="btn">
-            Odoslať
-          </button>
-        </form>
       </div>
     </section>
   )
