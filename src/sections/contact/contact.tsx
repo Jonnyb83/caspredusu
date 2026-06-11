@@ -19,15 +19,34 @@ export function Contact() {
             <div>
               <strong>E-mail</strong>
               <p>
-                <a href="mailto:maria.rapusakova@gmail.com">
-                  maria.rapusakova@gmail.com
+                <a href="mailto:caspredusu@gmail.com">
+                  caspredusu@gmail.com
                 </a>
               </p>
             </div>
 
             <div>
+              <strong>Kontaktná osoba</strong>
+              <p>Mária Rehušová</p>
+            </div>
+
+            <div>
               <strong>Spoločnosť</strong>
-              <p>Rekofin MR s.r.o.</p>
+              <p>REKOFIN MR, s.r.o.</p>
+            </div>
+
+            <div>
+              <strong>Sídlo</strong>
+              <p>
+                Šustekova 15
+                <br />
+                851 04 Bratislava – Petržalka
+              </p>
+            </div>
+
+            <div>
+              <strong>IČO</strong>
+              <p>50 439 707</p>
             </div>
 
             <div>
@@ -35,7 +54,7 @@ export function Contact() {
               <p>
                 Mestský súd Bratislava III
                 <br />
-                Vložka č. 113432/B
+                oddiel Sro, vložka č. 113432/B
               </p>
             </div>
 
