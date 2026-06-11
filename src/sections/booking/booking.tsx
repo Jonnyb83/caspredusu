@@ -16,10 +16,11 @@ export default function Booking() {
 
           <div className={styles.calendlyWrapper}>
             <iframe
-              src="https://calendly.com/jonny777-b/30min?hide_gdpr_banner=1&hide_landing_page_details=1&hide_landing_page_title=1&background_color=ffffff&text_color=000000&primary_color=000000"
+              src="https://calendly.com/caspredusu/30min?hide_gdpr_banner=1&hide_landing_page_details=1&hide_landing_page_title=1&background_color=ffffff&text_color=000000&primary_color=000000"
               width="100%"
               height="700"
               frameBorder="0"
+              title="Calendly rezervácia"
             />
           </div>
         </div>
