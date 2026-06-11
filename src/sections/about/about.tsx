@@ -46,7 +46,7 @@ export function About() {
       <div className={`container ${styles.wrap}`}>
         <div className={styles.profile}>
           <img
-            src="/images/maria.jpg"
+            src="/images/doc/profil.jpeg"
             alt="Mária Rehušová"
             className={styles.photo}
           />
