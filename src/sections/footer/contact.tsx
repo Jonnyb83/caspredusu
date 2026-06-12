@@ -1,9 +1,14 @@
+import Link from 'next/link'
 import styles from './legal.module.css'
 
 export function Contact() {
   return (
     <main className={styles.page}>
       <div className={styles.container}>
+        <Link href="/" className={styles.backLink}>
+          ← Návrat na hlavnú stránku
+        </Link>
+
         <h1>Kontakt</h1>
 
         <p>

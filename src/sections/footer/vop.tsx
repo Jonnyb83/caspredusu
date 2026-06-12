@@ -1,9 +1,14 @@
+import Link from 'next/link'
 import styles from './legal.module.css'
 
 export function Vop() {
   return (
     <main className={styles.page}>
       <div className={styles.container}>
+        <Link href="/" className={styles.backLink}>
+          ← Návrat na hlavnú stránku
+        </Link>
+
         <h1>Všeobecné obchodné podmienky</h1>
 
         <div className={styles.card}>

@@ -9,6 +9,19 @@
   margin: 0 auto;
 }
 
+.backLink {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  text-decoration: none;
+  color: #666;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.backLink:hover {
+  color: #222;
+}
+
 .container h1 {
   font-size: 1.75rem;
   font-weight: 600;
@@ -52,6 +65,11 @@
 
   .container {
     max-width: 100%;
+  }
+
+  .backLink {
+    font-size: 0.9rem;
+    margin-bottom: 1.25rem;
   }
 
   .container h1 {

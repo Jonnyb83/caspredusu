@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styles from './navbar.module.css'
 
 const links = [
@@ -5,22 +6,22 @@ const links = [
   { href: '#emocny-kod', label: 'Emočný kód' },
   { href: '#o-mne', label: 'O mne' },
   { href: '#cennik', label: 'Cenník' },
-  { href: '#kontakt', label: 'Kontakt' },
+  { href: '/kontakt', label: 'Kontakt' },
 ]
 
 export function Navbar() {
   return (
     <header className={styles.header}>
       <nav className={styles.nav} aria-label="Hlavná navigácia">
-        <a href="#" className={styles.logo}>
+        <Link href="/" className={styles.logo}>
           Pokoj a rovnováha
-        </a>
+        </Link>
 
         <div className={styles.links}>
           {links.map((link) => (
-            <a key={link.href} href={link.href}>
+            <Link key={link.href} href={link.href}>
               {link.label}
-            </a>
+            </Link>
           ))}
         </div>
 
