@@ -1,10 +1,11 @@
 import type { Metadata } from 'next'
+import { CookieBanner } from '@/components/cookie-banner/cookie-banner'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Relax, masáže a Emočný kód',
+  title: 'Čas pre dušu | Relax, masáže a Emočný kód',
   description:
-    'Jednoduchý prezentačný web pre relaxačné masáže, emocionálnu pohodu a rezervácie cez kontaktný formulár.',
+    'Prezentačný web pre relaxačné masáže, emocionálnu pohodu, Emočný kód a online rezervácie.',
 }
 
 export default function RootLayout({
@@ -14,7 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="sk">
-      <body>{children}</body>
+      <body>
+        {children}
+        <CookieBanner />
+      </body>
     </html>
   )
 }
