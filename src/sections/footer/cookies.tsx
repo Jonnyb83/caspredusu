@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { ArrowLeft, HouseIcon } from 'lucide-react'
 import styles from './legal.module.css'
 
 export function Cookies() {
@@ -6,7 +7,8 @@ export function Cookies() {
     <main className={styles.page}>
       <div className={styles.container}>
         <Link href="/" className={styles.backLink}>
-          ← Návrat na hlavnú stránku
+          <HouseIcon size={18} />
+          <span>Návrat na hlavnú stránku</span>
         </Link>
 
         <h1>Cookies</h1>
