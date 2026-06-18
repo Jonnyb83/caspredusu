@@ -7,14 +7,37 @@
 .card {
   min-height: 260px;
   padding: 1.5rem;
+
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--surface);
   box-shadow: var(--shadow);
+
+  display: flex;
+  flex-direction: column;
 }
 
 .card h3 {
+  margin: 0 0 1rem;
   color: var(--accent-dark);
+
+  text-align: center;
+}
+
+.card p {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  margin: 0;
+  line-height: 1.7;
+
+  /* jemné posunutie vyššie, vyzerá prirodzenejšie */
+  padding-bottom: 1.5rem;
 }
 
 @media (max-width: 900px) {
@@ -24,5 +47,10 @@
 
   .card {
     min-height: auto;
+  }
+
+  .card p {
+    display: block;
+    padding-bottom: 0;
   }
 }

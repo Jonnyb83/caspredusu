@@ -4,7 +4,7 @@ const services = [
   {
     title: 'Emočný kód',
     text:
-      'Jemná podporná metóda zameraná na uvoľnenie emocionálnej záťaže a vnútorného napätia. Sedenie prebieha na diaľku z pohodlia vášho domova.',
+      'Jemná podporná metóda zameraná na uvoľnenie emocionálnej záťaže a vnútorného napätia. Sedenie prebieha na diaľku z pohodlia vášho domova. Doprajte si chvíľu pre seba a objavte cestu k väčšiemu vnútornému pokoju.',
   },
 
   {
