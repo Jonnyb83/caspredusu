@@ -8,12 +8,14 @@ const slides = [
     title: 'Emočný kód na diaľku',
     image: './images/hero/emocny_kod.png',
   },
+
   {
-    title: 'Antimigrenózna a antistresová masáž hlavy',
+    title: 'Antistresový program pre tvár',
     image: './images/hero/masaz_hlavy.png',
   },
+
   {
-    title: 'Reflexná a regeneračná masáž rúk',
+    title: 'Harmonizačný program pre ruky',
     image: './images/hero/masaz_ruk.png',
   },
 ]
@@ -32,15 +34,19 @@ export default function Hero() {
   return (
     <section className={styles.hero} id="uvod">
       <div className={styles.content}>
-        <p className={styles.label}>Relax • pohoda • vnútorný pokoj</p>
+        <p className={styles.label}>
+          Relax • pohoda • vnútorný pokoj
+        </p>
 
-        <h1>Cítite sa vyčerpaní z každodenného stresu a povinností?</h1>
+        <h1>
+          Cítite sa vyčerpaní z každodenného stresu a povinností?
+        </h1>
 
         <p className={styles.text}>
           Doprajte si chvíľu pokoja, regenerácie a starostlivosti o seba.
           Pomáham ľuďom nájsť väčší vnútorný pokoj, uvoľnenie a psychickú
-          pohodu prostredníctvom relaxačných masáží a práce s emocionálnou
-          záťažou.
+          pohodu prostredníctvom jemných harmonizačných techník a práce
+          s emocionálnou záťažou.
         </p>
 
         <div className={styles.actions}>
@@ -71,7 +77,12 @@ export default function Hero() {
               activeSlide === index ? styles.activeSlide : ''
             }`}
           >
-            <img src={slide.image} alt={slide.title} />
+            <img
+              src={slide.image}
+              alt={slide.title}
+              loading={index === 0 ? 'eager' : 'lazy'}
+            />
+
             <div className={styles.slideOverlay}>
               <p>{slide.title}</p>
             </div>

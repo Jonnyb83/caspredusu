@@ -3,15 +3,20 @@ import styles from './services.module.css'
 const services = [
   {
     title: 'Emočný kód',
-    text: 'Jemná podporná metóda zameraná na uvoľnenie emocionálnej záťaže a vnútorného napätia. Sedenie prebieha na diaľku z pohodlia vášho domova.',
+    text:
+      'Jemná podporná metóda zameraná na uvoľnenie emocionálnej záťaže a vnútorného napätia. Sedenie prebieha na diaľku z pohodlia vášho domova.',
   },
+
   {
-    title: 'Antimigrenózna a antistresová masáž hlavy',
-    text: 'Hlboko relaxačná masáž zameraná na uvoľnenie stresu, napätia a únavy. Pomáha pri psychickom vyčerpaní a dlhodobom strese.',
+    title: 'Antistresový program pre tvár',
+    text:
+      'Doprajte si hlboké uvoľnenie a chvíľu pokoja. Tento jemný harmonizačný rituál je zameraný na stimuláciu relaxačných zón na tvári prostredníctvom cielených dotykov a jemného tlaku. Bez použitia krémov či olejov pomáha navodiť pocit uvoľnenia, oddychu a celkovej pohody.',
   },
+
   {
-    title: 'Reflexná a regeneračná masáž rúk',
-    text: 'Relaxačná masáž podporujúca uvoľnenie tela, zlepšenie cirkulácie a celkovú pohodu organizmu.',
+    title: 'Antistresový program pre unavené ruky',
+    text:
+      'Naše ruky sú počas dňa neustále v pohybe a často v sebe nesú napätie a únavu. Jemná stimulácia harmonizačných bodov a relaxačných zón na rukách podporuje uvoľnenie, príjemný pocit ľahkosti a vnútorného pokoja. Procedúra prebieha nasucho, bez použitia krémov a olejov.',
   },
 ]
 
@@ -21,7 +26,10 @@ export function Services() {
       <div className="container">
         <div className="sectionHeader">
           <p className="eyebrow">Moje služby</p>
-          <h2>Jednoduchá starostlivosť o telo, pokoj a vnútornú rovnováhu.</h2>
+
+          <h2>
+            Jednoduchá starostlivosť o telo, pokoj a vnútornú rovnováhu.
+          </h2>
         </div>
 
         <div className={styles.grid}>
